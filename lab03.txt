@@ -27,9 +27,9 @@ the end of the list/array.
 You can either do the tokenization yourself (*i.e.*, find each
 whitespace delimited word using primitive comparisons), or you can
 use the C library function ``strsep`` (or ``strtok``, or the thread-safe ``strtok_r``).
-I'd recommend using one of the library functions: ``strsep`` will do
+I'd recommend using one of the library functions: ``strsep`` or ``strtok`` will do
 the "hard" work of finding each space-delimited word, leaving you
 with the task of putting them into an array.  The downside to the
-convenience of using ``strsep`` is that it can be a bit tricky; you'll
-want to carefully read the ``man`` page.
+convenience of using one of these functions is that they can be a bit tricky; 
+you'll want to carefully read the ``man`` page.
 
